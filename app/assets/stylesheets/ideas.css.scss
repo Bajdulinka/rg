@@ -1,0 +1,12 @@
+.kategorie {color: black; font-family: Arial}
+.plany {color: red}
+
+a.tlacitko, h1 { padding: 0.3em 1em 0.3em 1em; border: outset 0.5em; font-weight: bold; text-decoration: none; backround: gray; color: white; margin-top: 20px; margin-bottom: 20px; display: inline-block }
+a.tlacitko:link, a.tlacitko:visited, h1 { background: gray; color: white }
+a.tlacitko:hover { background: white; color: gray; border: inset 0.5em; text-decoration: none }
+.velikost_obrazku {width: 200px;}
+
+.struktura { margin-bottom: 20px; clear: left; }
+.odsazeni {margin-left: 20px; float: left;}
+.odstavec {margin-bottom: 20px; float:left;}
+h1 {width: 93%}

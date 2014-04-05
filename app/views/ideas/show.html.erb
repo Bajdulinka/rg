@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Název</strong>
+  <%= @idea.name %>
+</p>
+
+<p>
+  <strong>Popis</strong>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <strong>Obrázek</strong>
+  <%= @idea.picture %>
+</p>
+
+<%= link_to 'Upravit', edit_idea_path(@idea), class: "tlacitko" %> |
+<%= link_to 'Zpět', ideas_path, class: "tlacitko" %>

@@ -1,0 +1,49 @@
+<h1>Plány</h1>
+<%= link_to 'Nový plán', new_idea_path, class: "tlacitko" %>
+<!--
+<table class="struktura">
+  <thead>
+    <tr class="kategorie">
+      <th>Název</th>
+      <th>Popis</th>
+      <th>Obrázek</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ideas.each do |idea| %>
+      <tr>
+        <td class="plany"><%= idea.name %></td>
+        <td><%= idea.description %></td>
+        <td><%= idea.picture %></td>
+        <td>
+          <%= link_to 'Zobrazit', idea %>
+          <%= link_to 'Upravit', edit_idea_path(idea) %>
+          <%= link_to 'Smazat', idea, method: :delete, data: { confirm: 'Jste si jistá?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+-->
+
+
+
+<% @ideas.each do |idea| %>
+  <div class="struktura" >
+    <div class="odstavec">
+      <%= image_tag idea.picture, class: "velikost_obrazku" %>
+    </div>
+    <div class="odsazeni">
+      <h2> <%= link_to idea.name, idea_path(idea) %> </h2>
+      <p> <%= idea.description %> </p>
+    </div>
+  </div>
+
+
+<% end %>
+
+<br>
+
+
